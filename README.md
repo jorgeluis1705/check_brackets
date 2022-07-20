@@ -46,7 +46,7 @@ We only need [node js](https://nodejs.org/es/) js to run, i sued the v16.15.0 ve
 If we have installed node on our computer we just need to open the terminal and run the following command
 
 ```
- node solution.js
+ $ node solution.js
 ```
 
 And we can see in the terminal the results
