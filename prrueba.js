@@ -17,13 +17,14 @@ const isBalancedString = (str = "") => {
   // Create an empty array to storage the matches
   let stack = [];
 
-  // Iterating in the Expression
+  // Iterating in the Epression
   for (let i = 0; i < str.length; i++) {
-    let x = str[i];
+    // create a current item in the array
+    let currentItem = str[i];
 
-    if (x == "(" || x == "[" || x == "{") {
+    if (currentItem == "(" || currentItem == "[" || currentItem == "{") {
       // Push the element in the array ig the condition is correct
-      stack.push(x);
+      stack.push(currentItem);
       continue;
     }
 
@@ -32,9 +33,12 @@ const isBalancedString = (str = "") => {
     // So array cannot be empty at this point.
     if (stack.length == 0) return false;
 
+    //check the last item in the array
     let check = "";
-    switch (x) {
+    // evaluate the current item in some cases
+    switch (currentItem) {
       case ")":
+        //  assigned the last item in the array and delete that
         check = stack.pop();
         if (check == "{" || check == "[") return false;
         break;
