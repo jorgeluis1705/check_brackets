@@ -50,3 +50,6 @@ If we have installed node on our computer we just need to open the terminal and 
 ```
 
 And we can see in the terminal the results
+
+
+![image](https://user-images.githubusercontent.com/54613315/179905791-9b8f5029-4428-45e9-a60b-ca77b68ca1f5.png)
